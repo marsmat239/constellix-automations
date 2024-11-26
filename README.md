@@ -1,2 +1,1 @@
-# constellix-automations
-A repository detailing automation scripts I've created for Constellix
+This is a collection of python scripts I've been using with Constellix.
