@@ -65,7 +65,7 @@ print('secondary ip is ' + secondaryip)
 print('secondary ip status is ' + secondaryipstatus)
 
 #sets the Cloudflare API URL
-cloudflare_url = 'https://api.cloudflare.com/client/v4/zones/d311070c62ce637119c5d7a2b297632f/dns_records'
+cloudflare_url = 'https://api.cloudflare.com/client/v4/zones/zone-id/dns_records'
 
 #sets the Cloudflare API Headers
 cloudflare_headers = {
@@ -120,7 +120,7 @@ else:
 #print(siteip + 'is the site IP')
 #modify the Cloudflare IP of the record if the site ip and cloudflareip are not the same
 if(siteip!=cloudflareip):
-    cloudflare_url='https://api.cloudflare.com/client/v4/zones/d311070c62ce637119c5d7a2b297632f/dns_records/'+cloudflarerecordid
+    cloudflare_url='https://api.cloudflare.com/client/v4/zones/zone-id/dns_records/'+cloudflarerecordid
     cloudflare_update = {
     'name' : cloudflare_name,
     'proxied' : cloudflare_proxied,
